@@ -1,0 +1,150 @@
+@import '../../colours.scss';
+
+.tasks__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.tasks {
+    box-shadow: 14px 3px 18px 1px rgba(173,151,173,1);
+    padding: 60px;
+}
+
+.tasks__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $grey
+}
+.tasks__title__name {
+    max-width: 90%;
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: end;
+    display: flex;
+    min-width: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 41px;
+    padding-right: 20px;
+    &_grey {
+        color: $grey;
+    }
+    &_green {
+        color: $green;
+    }
+    &_blue {
+        color: $blue;
+    }
+    &_pink {
+        color: $pink;
+    }
+    &_lightgreen {
+        color: $lightgreen;
+    }
+    &_violet {
+        color: $violet;
+    }
+    &_black {
+        color: $black;
+    }
+    &_red {
+        color: $red;
+    }
+}
+.tasks__title__editor {
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        path {
+            fill: $green;
+        }
+    }
+    &:active {
+        path {
+            fill: darken($green, 10%);
+        }
+    }
+}
+.tasks__items {
+    display: flex;
+    flex-direction: column;
+    &_NO {
+        font-size: 32px;
+        color: $grey;
+    }
+}
+.tasks__item__checkbox__wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 15px;
+    transition: all 0.3s;
+    &:hover, &:active {
+        .task__delete {
+            display: flex;
+        }
+        .tasks__editor {
+            display: flex;
+        }
+    }
+}
+.checkbox {
+    display: none;
+    &:checked + .tasks__item__label {
+        background-color: $green;
+        .tick {
+            display: block;
+        }
+    }
+}
+.tasks__item__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 25px;
+    min-height: 25px;
+    border: 2px solid $grey;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $green;
+    }
+}
+.tick {
+    display: none;
+}
+.tasks__text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 80%;
+    font-size: 16px;
+    border: 0;
+    margin-left: 10px;
+}
+.task__delete {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: $red;
+    padding: 5px 5px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        path {
+            fill: $black;
+        }
+    }
+}
+.tasks__editor {
+    display: none;
+    margin-right: 15px;
+    margin-left: 30px;
+}

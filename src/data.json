@@ -1,0 +1,137 @@
+{
+  "store": [
+    {
+      "id": 1,
+      "icon": "green",
+      "topic": "Shopping",
+      "tasks": [
+        {
+          "taskText": "carrots",
+          "id": 1
+        },
+        {
+          "taskText": "beef",
+          "id": 2
+        },
+        {
+          "taskText": "bread",
+          "id": 3
+        },
+        {
+          "id": 4,
+          "taskText": "milk"
+        },
+        {
+          "id": 5,
+          "taskText": "cheese"
+        },
+        {
+          "id": 8,
+          "taskText": "apples"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "icon": "blue",
+      "topic": "home",
+      "tasks": [
+        {
+          "id": 1,
+          "taskText": "hoovering"
+        },
+        {
+          "id": 2,
+          "taskText": "dust"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "icon": "pink",
+      "topic": "Friends",
+      "tasks": [
+        {
+          "id": 1,
+          "taskText": "Walk with Jim"
+        },
+        {
+          "id": 2,
+          "taskText": "Talk with Sahra"
+        }
+      ]
+    },
+    {
+      "icon": "blue",
+      "topic": "test",
+      "tasks": [
+        {
+          "id": 1,
+          "taskText": "new task"
+        },
+        {
+          "id": 2,
+          "taskText": "redux?"
+        }
+      ],
+      "id": 16
+    },
+    {
+      "icon": "violet",
+      "topic": "Find new hobbies",
+      "tasks": [
+        {
+          "id": 1,
+          "taskText": "books"
+        },
+        {
+          "id": 2,
+          "taskText": "boarding"
+        }
+      ],
+      "id": 17
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "hex": "#C9D1D3",
+      "color": "grey"
+    },
+    {
+      "id": 2,
+      "hex": "#42B883",
+      "color": "green"
+    },
+    {
+      "id": 3,
+      "hex": "#64C4ED",
+      "color": "blue"
+    },
+    {
+      "id": 4,
+      "hex": "#FFBBCC",
+      "color": "pink"
+    },
+    {
+      "id": 5,
+      "hex": "#B6E6BD",
+      "color": "lightgreen"
+    },
+    {
+      "id": 6,
+      "hex": "#C355F5",
+      "color": "violet"
+    },
+    {
+      "id": 7,
+      "hex": "#09011A",
+      "color": "black"
+    },
+    {
+      "id": 8,
+      "hex": "#FF6464",
+      "color": "red"
+    }
+  ]
+}

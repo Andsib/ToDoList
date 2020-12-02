@@ -1,0 +1,125 @@
+@import '../../colours.scss';
+
+.addTopics__wrapper {
+    margin-top: 40px;
+}
+.addTopics__button {
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: 1px solid $black;
+    background-color: white;
+    color: $violet;
+    box-shadow: 10px 2px 12px -4px rgba(104,125,186,1);
+    font-size: 16px;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+        background-color: $violet;
+        color: white;
+        box-shadow: 10px 2px 30px -1px rgba(58,65,84,1);
+    }
+    &:active {
+        background-color: darken($violet, 20%);
+    }
+}
+.addTopics__form {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    background-color: $lightgrey;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 240px;
+    padding: 15px 20px;
+}
+.addTopics__form__text {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    &:focus {
+        border-color: $blue;
+    }
+}
+.addButton {
+    width: 80%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: $green;
+    color: white;
+    box-shadow: 10px 8px 5px 0px $blue;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        background-color: darken($green, 10%);
+        color: $black;
+        box-shadow: 10px 8px 5px 0px $black;
+    }
+    &:active {
+        background-color: darken($green, 20%);
+    }
+}
+.hideButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -15px;
+    top: -10px;
+    background-color: $red;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        path {
+            fill: $black;
+        }
+    }
+}
+.addTopics__form__colors {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.color__icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: all .2s;
+    cursor: pointer;
+    &_grey {
+        background-color: $grey;
+    }
+    &_green {
+        background-color: $green;
+    }
+    &_blue {
+        background-color: $blue;
+    }
+    &_pink {
+        background-color: $pink;
+    }
+    &_lightgreen {
+        background-color: $lightgreen;
+    }
+    &_violet {
+        background-color: $violet;
+    }
+    &_black {
+        background-color: $black;
+    }
+    &_red {
+        background-color: $red;
+    }
+    &:hover, &.active {
+        border-color: $black;
+    }
+}
